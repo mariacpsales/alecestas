@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/alecestas-logorosa-sem fundo.png" type="image/png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo/alecestas-logorosa-sem fundo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo/alecestas-logorosa-sem fundo.png">
+    <link rel="apple-touch-icon" href="img/logo/alecestas-logorosa-sem fundo.png">
+    <title>Alê Cestas - Cestas de Café da Manhã para Momentos Especiais</title>
+    <link type="text/css" rel="stylesheet" href="css/estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="menu-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/logo/alecestas3-logorosa-sem fundo.png" alt="Alê Cestas Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="menu-item-dropdown">
+                        <a href="#datas-comemorativas">DATAS COMEMORATIVAS</a>
+                        <ul class="submenu">
+                            <li><a href="#aniversarios">Aniversários</a></li>
+                            <li><a href="#dia-das-maes">Dia das Mães</a></li>
+                            <li><a href="#dia-dos-pais">Dia dos Pais</a></li>
+                            <li><a href="#pascoa">Páscoa</a></li>
+                            <li><a href="#dia-dos-namorados">Dia dos Namorados</a></li>
+                            <li><a href="#dia-das-criancas">Dia das Crianças</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item-dropdown">
+                        <a href="#fim-de-ano">FIM DE ANO</a>
+                        <ul class="submenu">
+                            <li><a href="#natal">Natal</a></li>
+                            <li><a href="#ano-novo">Ano Novo</a></li>
+                            <li><a href="#confraternizacao">Confraternização</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item-dropdown">
+                        <a href="#presentes">PRESENTES</a>
+                        <ul class="submenu">
+                            <li><a href="#cestas-cafe-manha">Cestas Café da Manhã</a></li>
+                            <li><a href="#cestas-gourmet">Cestas Gourmet</a></li>
+                            <li><a href="#cestas-chocolate">Cestas de Chocolate</a></li>
+                            <li><a href="#cestas-vinhos">Cestas com Vinhos</a></li>
+                            <li><a href="#kits-personalizados">Kits Personalizados</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item-dropdown">
+                        <a href="#ocasioes-especiais">OCASIÕES ESPECIAIS</a>
+                        <ul class="submenu">
+                            <li><a href="#casamento">Casamento</a></li>
+                            <li><a href="#maternidade">Maternidade</a></li>
+                            <li><a href="#padrinhos">Padrinhos</a></li>
+                            <li><a href="#formatura">Formatura</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item-dropdown">
+                        <a href="#corporativos">CORPORATIVOS</a>
+                        <ul class="submenu">
+                            <li><a href="#brindes-empresariais">Brindes Empresariais</a></li>
+                            <li><a href="#kits-colaboradores">Kits para Colaboradores</a></li>
+                            <li><a href="#eventos-corporativos">Eventos Corporativos</a></li>
+                            <li><a href="#cestas-clientes">Cestas para Clientes</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#cartoes">CARTÕES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrossel de Banners -->
+    <section id="home" class="banner-carousel">
+        <div class="carousel-container">
+            <!-- Banner 1 - Dia das Mães -->
+            <div class="carousel-slide active">
+                <div class="banner-image" style="background-image: url('img/banner/banner1.png');">
+                    
+                </div>
+            </div>
+
+            <!-- Banner 2 -->
+            <div class="carousel-slide">
+                <div class="banner-image" style="background-image: url('img/banner/banner2.png');">
+
+                </div>
+            </div>
+
+            <!-- Banner 3 -->
+            <div class="carousel-slide">
+                <div class="banner-image" style="background-image: url('img/banner/banner3.png');">
+
+                </div>
+            </div>
+
+            <!-- Banner 4 -->
+            <div class="carousel-slide">
+                <div class="banner-image" style="background-image: url('img/banner/banner4.png');">
+
+                </div>
+            </div>
+
+            <!-- Controles do Carrossel -->
+            <button class="carousel-control prev" onclick="moveSlide(-1)">‹</button>
+            <button class="carousel-control next" onclick="moveSlide(1)">›</button>
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(0)"></span>
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre / Introdução -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Momentos Especiais Merecem Presentes Especiais</h2>
+                <p>Na Alê Cestas, preparamos cada cesta com muito carinho e dedicação. Produtos selecionados, apresentação impecável e entrega pontual para fazer quem você ama se sentir único neste dia tão especial.</p>
+                <div class="intro-features">
+                    <div class="feature-item">
+                        <span class="feature-icon"><img src="img/icon/embalagem.png" alt="Presente"></span>
+                        <h3>Produtos Selecionados</h3>
+                        <p>Itens de qualidade escolhidos com carinho</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><img src="img/icon/embalagem-de-presente.png" alt="Coração"></span>
+                        <h3>Embalagem Caprichada</h3>
+                        <p>Apresentação linda e delicada</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><img src="img/icon/entrega.png" alt="Entrega"></span>
+                        <h3>Entrega no Vale do Aço</h3>
+                        <p>Ipatinga, Coronel Fabriciano e Timóteo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Cestas -->
+    <section id="cestas" class="catalogo-section">
+        <div class="container">
+            <h2 class="section-title">Nossas Cestas Mais Pedidas</h2>
+            <p class="section-subtitle">Selecionamos as opções mais queridas pelos nossos clientes, preparadas com carinho, qualidade e uma apresentação impecável para surpreender em qualquer ocasião.</p>
+            
+            <div class="cestas-grid">
+                <!-- Cesta 1 -->
+                <div class="cesta-card">
+                    <div class="cesta-image">
+                        <img src="img/produtos/cesta-coracao.jpg" alt="Cesta Carinho">
+                        <span class="cesta-badge">Popular</span>
+                    </div>
+                    <div class="cesta-info">
+                        <h3>Cesta Carinho</h3>
+                        <p class="cesta-descricao">Perfeita para demonstrar todo seu amor. Inclui café, pães, geleias, sucos e muito mais.</p>
+                        <ul class="cesta-itens">
+                            <li>Café premium</li>
+                            <li>Pães frescos</li>
+                            <li>Geleias artesanais</li>
+                            <li>Suco natural</li>
+                            <li>Frutas selecionadas</li>
+                        </ul>
+                        <div class="cesta-footer">
+                            <span class="cesta-preco">R$ 89,90</span>
+                            <a href="https://wa.me/5531987899608?text=Olá!%20Gostaria%20de%20encomendar%20a%20Cesta%20Carinho%20para%20o%20Dia%20das%20Mães" target="_blank" class="btn-whatsapp">
+                                <img src="img/icon/whatsapp-pb.png" alt="WhatsApp"> Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cesta 2 -->
+                <div class="cesta-card">
+                    <div class="cesta-image">
+                        <img src="img/produtos/cesta-frutos-secos-e-nozes.jpg" alt="Cesta Especial">
+                    </div>
+                    <div class="cesta-info">
+                        <h3>Cesta Especial</h3>
+                        <p class="cesta-descricao">Uma seleção completa para um café da manhã inesquecível com produtos premium.</p>
+                        <ul class="cesta-itens">
+                            <li>Café especial</li>
+                            <li>Pães artesanais variados</li>
+                            <li>Frios nobres</li>
+                            <li>Geleias gourmet</li>
+                            <li>Sucos e iogurtes</li>
+                            <li>Chocolates finos</li>
+                        </ul>
+                        <div class="cesta-footer">
+                            <span class="cesta-preco">R$ 149,90</span>
+                            <a href="https://wa.me/5531987899608?text=Olá!%20Gostaria%20de%20encomendar%20a%20Cesta%20Especial%20para%20o%20Dia%20das%20Mães" target="_blank" class="btn-whatsapp">
+                                <img src="img/icon/whatsapp-pb.png" alt="WhatsApp"> Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cesta 3 -->
+                <div class="cesta-card">
+                    <div class="cesta-image">
+                        <img src="img/produtos/cesta-de-frutos-secos-e-vinho.jpg" alt="Cesta Premium">
+                        <span class="cesta-badge destaque">Mais Completa</span>
+                    </div>
+                    <div class="cesta-info">
+                        <h3>Cesta Premium</h3>
+                        <p class="cesta-descricao">O máximo em sofisticação e variedade. Para mães que merecem o melhor!</p>
+                        <ul class="cesta-itens">
+                            <li>Café gourmet importado</li>
+                            <li>Pães especiais e croissants</li>
+                            <li>Frios importados</li>
+                            <li>Geleias e mel premium</li>
+                            <li>Frutas nobres</li>
+                            <li>Flores decorativas</li>
+                        </ul>
+                        <div class="cesta-footer">
+                            <span class="cesta-preco">R$ 249,90</span>
+                            <a href="https://wa.me/5531987899608?text=Olá!%20Gostaria%20de%20encomendar%20a%20Cesta%20Premium%20para%20o%20Dia%20das%20Mães" target="_blank" class="btn-whatsapp">
+                                <img src="img/icon/whatsapp-pb.png" alt="WhatsApp"> Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cesta 4 -->
+                <div class="cesta-card">
+                    <div class="cesta-image">
+                        <img src="img/produtos/cesta-de-cafe.jpg" alt="Cesta de Café">
+                        <span class="cesta-badge destaque">Exclusiva</span>
+                    </div>
+                    <div class="cesta-info">
+                        <h3>Cesta de Café</h3>
+                        <p class="cesta-descricao">A experiência completa de um café da manhã de luxo. Elegância e sabor em cada detalhe.</p>
+                        <ul class="cesta-itens">
+                            <li>Café especial de origem única</li>
+                            <li>Seleção de pães artesanais</li>
+                            <li>Tábua de frios premium</li>
+                            <li>Geleias, mel e patês exclusivos</li>
+                            <li>Champagne de qualidade</li>
+                            <li>Chocolates belgas</li>
+                            <li>Frutas exóticas</li>
+                            <li>Arranjo de flores naturais</li>
+                            <li>Cartão personalizado</li>
+                        </ul>
+                        <div class="cesta-footer">
+                            <span class="cesta-preco">R$ 349,90</span>
+                            <a href="https://wa.me/5531987899608?text=Olá!%20Gostaria%20de%20encomendar%20a%20Cesta%20Deluxe%20para%20o%20Dia%20das%20Mães" target="_blank" class="btn-whatsapp">
+                                <img src="img/icon/whatsapp-pb.png" alt="WhatsApp"> Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cesta 5 -->
+                <div class="cesta-card">
+                    <div class="cesta-image">
+                        <img src="img/produtos/cesta-de-muffins.jpg" alt="Cesta Muffins">
+                        <span class="cesta-badge">Novidade</span>
+                    </div>
+                    <div class="cesta-info">
+                        <h3>Cesta de Muffins</h3>
+                        <p class="cesta-descricao">Delícia assada fresquinha! Muffins variados e produtos especiais para um café da manhã irresistível.</p>
+                        <ul class="cesta-itens">
+                            <li>6 Muffins de sabores variados</li>
+                            <li>Café premium</li>
+                            <li>Suco natural de laranja</li>
+                            <li>Manteiga artesanal</li>
+                            <li>Geleia de frutas vermelhas</li>
+                            <li>Iogurte grego</li>
+                            <li>Mix de frutas frescas</li>
+                            <li>Embalagem decorada</li>
+                        </ul>
+                        <div class="cesta-footer">
+                            <span class="cesta-preco">R$ 129,90</span>
+                            <a href="https://wa.me/5531987899608?text=Olá!%20Gostaria%20de%20encomendar%20a%20Cesta%20de%20Muffins%20para%20o%20Dia%20das%20Mães" target="_blank" class="btn-whatsapp">
+                                <img src="img/icon/whatsapp-pb.png" alt="WhatsApp"> Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cesta 6 -->
+                <div class="cesta-card">
+                    <div class="cesta-image">
+                        <img src="img/produtos/cesta-de-bombom-e-marshmallow.jpg" alt="Cesta Marshmallows">
+                        <span class="cesta-badge">Novidade</span>
+                    </div>
+                    <div class="cesta-info">
+                        <h3>Cesta de Marshmallows</h3>
+                        <p class="cesta-descricao">Doçura pura! Marshmallows artesanais e bombons deliciosos para adoçar o dia de quem você ama.</p>
+                        <ul class="cesta-itens">
+                            <li>Marshmallows artesanais variados</li>
+                            <li>Bombons sortidos</li>
+                            <li>Chocolate quente gourmet</li>
+                            <li>Cookies caseiros</li>
+                            <li>Trufas de chocolate</li>
+                            <li>Chá premium</li>
+                            <li>Biscoitos amanteigados</li>
+                            <li>Caneca personalizada</li>
+                        </ul>
+                        <div class="cesta-footer">
+                            <span class="cesta-preco">R$ 159,90</span>
+                            <a href="https://wa.me/5531987899608?text=Olá!%20Gostaria%20de%20encomendar%20a%20Cesta%20de%20Marshmallows%20para%20o%20Dia%20das%20Mães" target="_blank" class="btn-whatsapp">
+                                <img src="img/icon/whatsapp-pb.png" alt="WhatsApp"> Encomendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="personalizacao-box">
+                <h3>Quer Personalizar sua Cesta?</h3>
+                <p>Entre em contato conosco pelo WhatsApp e monte a cesta perfeita com os produtos que sua mãe mais gosta!</p>
+                <a href="https://wa.me/5531987899608?text=Olá!%20Gostaria%20de%20fazer%20uma%20cesta%20personalizada%20para%20o%20Dia%20das%20Mães" target="_blank" class="btn-secondary">Fazer Cesta Personalizada</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Pedir -->
+    <section id="como-pedir" class="como-pedir-section">
+        <div class="container">
+            <h2 class="section-title">Como Encomendar</h2>
+            <p class="section-subtitle">Como encomendar uma cesta para presente com a Alê Cestas</p>
+            
+            <div class="passos-grid">
+                <div class="passo-item">
+                    <div class="passo-numero">1</div>
+                    <h3>Escolha a Cesta</h3>
+                    <p>Navegue pelo nosso site e escolha a cesta ideal para o presenteado.</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">2</div>
+                    <h3>Escolha um Cartão</h3>
+                    <p>Escolha um cartão temático ou escreva uma mensagem simples para o presenteado.</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">3</div>
+                    <h3>Faça o Pedido</h3>
+                    <p>Clique no botão "Encomendar" e fale conosco pelo WhatsApp</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">4</div>
+                    <h3>Confirme os Detalhes</h3>
+                    <p>Informe endereço de entrega, data e horário desejado</p>
+                </div>
+                <div class="passo-item">
+                    <div class="passo-numero">5</div>
+                    <h3>Receba com Carinho</h3>
+                    <p>Entregamos sua cesta no dia e horário combinados</p>
+                </div>
+            </div>
+   </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos-section">
+        <div class="container">
+            <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+            
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="depoimento-stars">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                    </div>
+                    <p class="depoimento-texto">"Minha mãe ficou emocionada com a cesta! Tudo muito bem embalado e produtos de qualidade. Super recomendo!"</p>
+                    <p class="depoimento-autor">- Ana Paula Marcelino</p>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-stars">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                    </div>
+                    <p class="depoimento-texto">"Atendimento impecável e entrega pontual. A cesta estava linda e deliciosa. Com certeza vou pedir novamente!"</p>
+                    <p class="depoimento-autor">- Mariana Costa</p>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-stars">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                        <img src="img/icon/estrela.png" alt="estrela">
+                    </div>
+                    <p class="depoimento-texto">"Surpreendeu minhas expectativas! Produtos frescos, apresentação caprichada. Minha mãe amou cada detalhe!"</p>
+                    <p class="depoimento-autor">- Roberto Almeida</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <!-- Seção Superior com Logo -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-content">
+                    <div class="footer-brand">
+                        <img src="img/logo/alecestas3-logorosa-sem fundo.png" alt="Ale Cestas Logo" class="footer-logo">
+                    </div>
+                    <div class="footer-intro">
+                        <p>Somos especializados em cestas e caixas de presentes criativos, perfeitas para surpreender em qualquer ocasião.</p>
+                        <p>Oferecemos também cestas personalizadas, criadas conforme a necessidade de cada cliente.</p>
+                        <p class="footer-slogan">Será um prazer atendê-los!</p>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/alecestasvaledoaco/" target="_blank" aria-label="Instagram"><img src="img/icon/instagram.png" alt="Instagram"></a>
+                            <a href="https://facebook.com/alecestasvaledoaco" target="_blank" aria-label="Facebook"><img src="img/icon/facebook.png" alt="Facebook"></a>
+                            <a href="https://wa.me/5531987899608" target="_blank" aria-label="WhatsApp"><img src="img/icon/whatsapp-pb.png" alt="WhatsApp"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção do Meio com Menus -->
+        <div class="footer-middle">
+            <div class="container">
+                <div class="footer-menu-grid">
+                    <div class="footer-menu-col">
+                        <h3>INSTITUCIONAL</h3>
+                        <ul>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-menu-col">
+                        <h3>CESTAS</h3>
+                        <ul>
+                            <li><a href="#cestas-para-presentear">Cestas para Presentear</a></li>
+                            <li><a href="#dia-das-maes">Cestas de Dia das Mães</a></li>
+                            <li><a href="#dia-dos-namorados">Cestas de Dia dos Namorados</a></li>
+                            <li><a href="#dia-dos-pais">Cestas de Dia dos Pais</a></li>
+                            <li><a href="#natal">Cestas de Natal</a></li>
+                            <li><a href="#ano-novo">Cestas de Ano Novo</a></li>
+                            <li><a href="#cestas-e-kits-corporativos">Cestas e Kits Corporativos</a></li>
+                            <li><a href="#personalizada">Cestas Personalizadas</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-menu-col">
+                        <h3>TERMOS E POLÍTICAS</h3>
+                        <ul>
+                            <li><a href="#privacidade">Política de Privacidade</a></li>
+                            <li><a href="#trocas">Política de Trocas e Devoluções</a></li>
+                            <li><a href="#envios">Política de Envios e Prazos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-menu-col">
+                        <h3>CONTATO</h3>
+                        <ul class="footer-contact-list">
+                            <li><a href="mailto:alexandracestas@gmail.com" target="_blank">E-mail: alexandracestas@gmail.com</a></li>
+                            <li><a href="https://wa.me/5531987899608" target="_blank"><i class="icon-whatsapp"></i>Whatsapp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Inferior com Copyright -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>Alê Cestas ©2026  | Todos os direitos reservados</p>
+                    <p class="footer-dev">Desenvolvido por <a href="https://mariacpsales.com.br" target="_blank">MCPS</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5531987899608?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20encomenda" target="_blank" class="whatsapp-float">
+        <img src="img/icon/whatsapp-pb.png" alt="WhatsApp">
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/carrossel.js"></script>
+</body>
+</html>

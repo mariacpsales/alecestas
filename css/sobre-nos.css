@@ -1,0 +1,306 @@
+/* ============================================
+   ESTILOS DA PÁGINA SOBRE NÓS
+   ============================================ */
+
+/* Hero Section */
+.sobre-hero {
+    background: linear-gradient(135deg, #FFF5F7 0%, #FFE8EF 100%);
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.sobre-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #B83B64;
+    margin-bottom: 20px;
+}
+
+.title-underline {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, #D4557F 0%, #B83B64 100%);
+    margin: 0 auto;
+}
+
+/* Seção Introdução */
+.sobre-intro {
+    padding: 80px 0;
+    background-color: #FFF;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.intro-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.intro-image {
+    position: relative;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(212, 85, 127, 0.15);
+}
+
+/* Frase Destaque */
+.sobre-destaque {
+    background: linear-gradient(135deg, #D4557F 0%, #B83B64 100%);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destaque-text {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFF;
+    letter-spacing: 0;
+    line-height: 1.4;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Seção Conteúdo - Diretrizes e História */
+.sobre-conteudo {
+    padding: 80px 0;
+    background-color: #FFFBFC;
+}
+
+.conteudo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.diretrizes-col h2,
+.historia-col h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #B83B64;
+    margin-bottom: 30px;
+}
+
+/* Diretrizes */
+.diretriz-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.diretriz-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.diretriz-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(28%) sepia(87%) saturate(1189%) hue-rotate(316deg) brightness(91%) contrast(88%);
+}
+
+.diretriz-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* História */
+.historia-col p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Foto das Fundadoras - Centralizada */
+.fundadoras-image-center {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.fundadoras-image-center img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(212, 85, 127, 0.15);
+    margin: 0 auto; /* Garante centralização */
+}
+
+.fundadoras-image {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.fundadoras-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(212, 85, 127, 0.15);
+}
+
+.fundadoras-caption {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+}
+
+/* CTA Final */
+.sobre-cta {
+    background: linear-gradient(135deg, #FFF5F7 0%, #FFE8EF 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.sobre-cta h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #B83B64;
+    margin-bottom: 15px;
+}
+
+.sobre-cta p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.btn-cta-sobre {
+    display: inline-block;
+    background: linear-gradient(135deg, #D4557F 0%, #B83B64 100%);
+    color: #FFF;
+    padding: 18px 45px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(212, 85, 127, 0.3);
+}
+
+.btn-cta-sobre:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(212, 85, 127, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .intro-grid,
+    .conteudo-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .sobre-title {
+        font-size: 40px;
+    }
+
+    .intro-text h2 {
+        font-size: 22px;
+    }
+
+    .diretrizes-col h2,
+    .historia-col h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-hero {
+        padding: 60px 0 40px;
+    }
+
+    .sobre-title {
+        font-size: 36px;
+    }
+
+    .sobre-intro,
+    .sobre-conteudo {
+        padding: 50px 0;
+    }
+
+    .intro-text h2 {
+        font-size: 20px;
+    }
+
+    .intro-text p,
+    .diretriz-item p,
+    .historia-col p {
+        font-size: 15px;
+    }
+
+    .destaque-text {
+        font-size: 24px;
+        padding: 0 20px;
+    }
+
+    .sobre-cta h2 {
+        font-size: 28px;
+    }
+
+    .sobre-cta p {
+        font-size: 16px;
+    }
+
+    .conteudo-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-title {
+        font-size: 32px;
+    }
+
+    .intro-text h2 {
+        font-size: 18px;
+    }
+
+    .diretrizes-col h2,
+    .historia-col h2 {
+        font-size: 22px;
+    }
+
+    .destaque-text {
+        font-size: 20px;
+    }
+
+    .diretriz-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .btn-cta-sobre {
+        padding: 15px 35px;
+        font-size: 15px;
+    }
+}

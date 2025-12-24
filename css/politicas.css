@@ -1,0 +1,230 @@
+/* ============================================
+   ESTILOS DAS PÁGINAS DE POLÍTICAS
+   ============================================ */
+
+/* Hero Section */
+.politica-hero {
+    background: linear-gradient(135deg, #FFF5F7 0%, #FFE8EF 100%);
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.politica-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #B83B64;
+    margin-bottom: 15px;
+}
+
+.title-underline {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, #D4557F 0%, #B83B64 100%);
+    margin: 0 auto 15px;
+}
+
+.politica-data {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+}
+
+/* Conteúdo */
+.politica-conteudo {
+    padding: 60px 0 80px;
+    background-color: #FFF;
+}
+
+.politica-intro {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #FFF5F7 0%, #FFE8EF 50%);
+    border-left: 4px solid #D4557F;
+    border-radius: 8px;
+}
+
+.politica-intro p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Seções */
+.politica-secao {
+    margin-bottom: 45px;
+}
+
+.politica-secao h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #B83B64;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FFE8EF;
+}
+
+.politica-secao p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.politica-secao ul {
+    margin: 15px 0 15px 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.politica-secao li {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-left: 30px;
+    position: relative;
+}
+
+.politica-secao li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/icon/ponto-final.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.politica-secao li::marker {
+    color: #D4557F;
+}
+
+.politica-secao strong {
+    color: #B83B64;
+    font-weight: 600;
+}
+
+/* Bloco de Contato */
+.politica-contato {
+    background-color: #FFFBFC;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #FFE8EF;
+    margin-top: 20px;
+}
+
+.politica-contato p {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.politica-contato a {
+    color: #D4557F;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.politica-contato a:hover {
+    color: #B83B64;
+    text-decoration: underline;
+}
+
+/* Footer do Texto */
+.politica-footer-texto {
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #FFF5F7 0%, #FFE8EF 100%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.politica-footer-texto p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.politica-footer-texto p:last-child {
+    font-weight: 600;
+    color: #B83B64;
+    margin-bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .politica-hero {
+        padding: 50px 0 30px;
+    }
+
+    .politica-title {
+        font-size: 32px;
+    }
+
+    .politica-conteudo {
+        padding: 40px 0 60px;
+    }
+
+    .politica-intro {
+        padding: 20px;
+    }
+
+    .politica-intro p {
+        font-size: 16px;
+    }
+
+    .politica-secao h2 {
+        font-size: 22px;
+    }
+
+    .politica-secao p,
+    .politica-secao li {
+        font-size: 15px;
+    }
+
+    .politica-secao ul {
+        margin-left: 20px;
+    }
+
+    .politica-contato {
+        padding: 20px;
+    }
+
+    .politica-footer-texto {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .politica-title {
+        font-size: 28px;
+    }
+
+    .politica-data {
+        font-size: 13px;
+    }
+
+    .politica-intro p {
+        font-size: 15px;
+    }
+
+    .politica-secao h2 {
+        font-size: 20px;
+    }
+
+    .politica-secao p,
+    .politica-secao li {
+        font-size: 14px;
+    }
+
+    .politica-secao ul {
+        margin-left: 15px;
+    }
+}
